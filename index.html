@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmltag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-light-theme-favic-d92b9def036e6.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a14a9cf491.js" crossorigin="anonymous"></script>
+    <title>tickerAI</title>
+</head>
+<body class="bg-white dark:bg-gray-900">
+    <!-- header section start -->
+    <header class="md:mx-14 md:py-4 py-2 px-2">
+        <nav class="container flex items-center justify-between mx-auto">
+            <div class="flex items-center gap-1 md:gap-3">
+                <a href="index.html">
+                    <img src="images/tickerAI-logo 1.png" alt="logo" class="w-10 md:w-fit">
+                </a>
+                <p class="text-[8px] md:text-[12px] dark:text-white"> A Mark Cuban Company
+                <br> AI-based Financial Market News Aggregator       
+                </p>
+            </div>
+            <div class="flex items-center justify-between gap-2 md:gap-7">
+                <a href="news.html">
+                    <button class="bg-[#5677ac] rounded-md md:text-base text-xs md:py-3 py-2 md:px-6 px-2 text-white font-semibold hover:bg-[#42669c] transition hover:scale-110 hover:translate-y-1">
+                        Personalize News 
+                    </button>
+                </a>
+                <div class="text-[#5677ac] text-lg md:text-2xl bg-[#5677AC26] font-bold size-9 flex items-center justify-center rounded-full hover:scale-105 transition-all cursor-pointer">
+                    <a href="index.html">IK</a>
+                    
+                </div>
+
+                <button id="switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 dark:stroke-white hover:scale-105 transition-all duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/>
+                    </svg>                      
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end -->
+    <!-- banner section start -->
+    <section class="flex flex-col items-center md:px-0 px-4 md:py-32 py-20 bg-[url('images/banner1.jpeg')] bg-no-repeat bg-cover">
+        <h1 class="md:text-7xl text-3xl font-bold italic text-white">
+            tickerAI
+        </h1>
+        <div class="flex bg-white md:w-[520px] w-full md:p-4 p-2 items-cente rounded gap-4 md:mt-10 mt-4 hover:ring">
+            <i class="fa fa-search mt-1"></i>
+            <input type="text" name="search" class="w-full outline-none" placeholder="Search any market topic...">
+        </div>
+        <p class="xs text-[#F3F3F3] md:pt-4 pt-2 mt-4">There are 6 articles available for your preferences</p>
+    </section>
+    <!-- banner section end -->
+<!-- news section start -->
+    <section class="container grid grid-cols-12 mx-auto mb-8 gap-8 md:px-0 px-4 pt-10">
+        <!-- all new section -->
+        <section class="md:col-span-9 col-span-12 md:ml-8 ">
+            <div class="flex items-center justify-between md:pb-2.5 border-b border-black md:border-b-[3px]">
+            <h3 class="md:text-2xl text-lg font-semibold text-[#333333] dark:text-white">All News</h3>
+            <div class="flex items-center  gap-2">
+                <p class="dark:text-white">Filter By:</p>
+                <h4 class="font-bold dark:text-white">Stocks</h4>
+                <i class="fa-solid fa-angle-down dark:text-white"></i>
+            </div>
+            </div>
+            <h2 class="headcard">Individual Stocks</h2>
+
+            <!-- card section -->
+            <div class="news">
+            <img src="images/Individual Stocks1.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">Dow jones</span>
+                    <span class="cardcaption">Nasdaq</span>
+                    <span class="cardcaption">S & P 500</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Shouvik Nath</a></span></p>
+            </div>
+            </div>
+            </div>
+
+            <div class="news">
+            <img src="images/Individual Stocks2.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">Dow jones</span>
+                    <span class="cardcaption">Nasdaq</span>
+                    <span class="cardcaption">S & P 500</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Amado</a></span></p>
+            </div>
+            </div>
+            </div>
+
+            <div class="news">
+            <img src="images/Individual Stocks3.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">wall street</span>
+                    <span class="cardcaption">Analyst coverage</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Amado</a></span></p>
+            </div>
+            </div>
+            </div>
+
+            <h2 class="headcard">Stock Sectors</h2>
+            <div class="news">
+            <img src="images/stock1.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">Dow jones</span>
+                    <span class="cardcaption">Nasdaq</span>
+                    <span class="cardcaption">S & P 500</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Shouvik Nath</a></span></p>
+            </div>
+            </div>
+            </div>
+            <div class="news">
+            <img src="images/stock2.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">Dow jones</span>
+                    <span class="cardcaption">Nasdaq</span>
+                    <span class="cardcaption">S & P 500</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Amado</a></span></p>
+            </div>
+            </div>
+            </div>
+
+            <h2 class="headcard">Stock Market Topics</h2>
+            <div class="news">
+            <img src="images/stockmarket1.png" alt="images" class="w-full h-44 object-cover md:h-fit md:size-[150px]">
+            <div class="md:space-y-4 space-y-3  ">
+                <div class="flex items-center gap-2">
+                    <span class="cardcaption">Dow jones</span>
+                    <span class="cardcaption">Nasdaq</span>
+                    <span class="cardcaption">S & P 500</span>
+                </div>
+            
+            <div>
+                <h3 class="md:text-lg font-semibold text-[#333333] pb-1 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                <p class="para">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+            </div>
+            <div class="flex items-center gap-4 md:gap-5 md:text-base text-sm">
+                <p class="text-[#616161] dark:text-white">06 September 2022</p>
+                <p class="text-[#121212] font-bold dark:text-white">By <span class=" text-[#5677AC] font-semibold"><a href="#">Shouvik Nath</a></span></p>
+            </div>
+            </div>
+            </div>
+        
+        </section>
+        <!-- features section -->
+        <section class="md:col-span-3 col-span-12 md:mr-8">
+
+            <div class="flex items-center justify-between md:pb-2.5 pb-1 border-b border-black md:border-b-[3px]" >
+                <h3 class="md:text-2xl text-lg font-semibold text-[#333333] uppercase dark:text-white">Featured</h3>
+            </div>
+            
+            <h2 class="headcard">Daily Rundowns</h2>
+           <!-- tag section -->
+             <div class="border boder-[#F5F5F5] p-3 md:p-5 space-y-3 md:space-y-5">
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Earnings:</h3>
+                    <div>
+                        <span class="earnings">Csan</span>
+                        <span class="earnings">Alya</span>
+                        <span class="earnings">Gato</span>
+                        <span class="earnings">Css</span>
+                        <span class="earnings">VZLA</span>
+                        <span class="earnings">MFH</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Movers::</h3>
+                    <div>
+                        <span class="earnings">rev</span>
+                        <span class="earnings">petv</span>
+                        <span class="earnings">rytm</span>
+                        <span class="earnings">srrk</span>
+                        <span class="earnings">vera</span>
+                        <span class="earnings">kzia</span>
+                        <span class="earnings">sym</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Technicals::</h3>
+                    <div>
+                        <span class="earnings">bearish</span>
+                        <span class="earnings">regn</span>
+                        <span class="earnings">tsla</span>
+                        <span class="earnings">mcd</span>
+                        <span class="earnings">bullish</span>
+                        <span class="earnings">uso</span>
+                        <span class="earnings">sedg</span>
+                        <span class="earnings">enph</span>
+                        <span class="earnings">shop</span>
+                    </div>
+                </div>
+             </div>
+             <!-- images gallery -->
+             <div class="pt-5">
+                <img class="w-full object-cover" src="images/Featured1.png" alt="images">
+                <h2 class="font-medium text-[#121212] p-4 text-center dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h2>
+             </div>
+             <div class="pt-5">
+                <img class="w-full object-cover" src="images/Featured2.png" alt="images">
+                <h2 class="font-medium text-[#121212] p-4 text-center dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h2>
+             </div>
+             <div class="pt-5">
+                <img class="w-full object-cover" src="images/Featured3.png" alt="images">
+                <h2 class="font-medium text-[#121212] p-4 text-center dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h2>
+             </div>
+
+
+        </section>
+    </section>
+<footer class="text-black text-center pb-5 w-full dark:text-white">
+ All rights reserved to ANTOR SUTRADHAR-2024
+</footer>
+
+<script>
+    const htmltag = document.getElementById("htmltag");
+    document.getElementById("switch").addEventListener("click", function () {
+        htmltag.classList.toggle("dark"); 
+
+    });
+</script>
+</body>
+</html>
